@@ -1,0 +1,10 @@
+###
+1. Hacer Git Clone del repositorio dentro de la dirección objetiva
+###
+2. Luego agregar cambios con Git add -A
+###
+3. Después hacer un Git Commit -m "Mensaje"
+###
+4. Finalmente Realizar git push. 
+###
+

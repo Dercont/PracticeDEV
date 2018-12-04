@@ -5,7 +5,7 @@ body{
 }
 
 .button{
-    background: coral;
+    background:rgb(65, 104, 87);
     padding:1em 2em;
     color:#fff;
     border:0;
@@ -39,18 +39,18 @@ body{
     margin:0;
 }
 .modal-header{
-    background:coral;
+    background:DarkSlateGray;
     padding: 15px;
-    color:#fff;
+    color:Ivory;
 }
 .modal-body{
     padding: 10px 20px;
 }
 
 .modal-footer{
-    background: coral;
+    background: DarkSlateGray;
     padding: 10px;
-    color:#fff;
+    color:Ivory;
     text-align: center;
 }
 
@@ -58,13 +58,22 @@ body{
     color: #ccc;
     float: right;
     font-size:30px;
-    color:#fff;
+    color:Ivory;
 }
 
 .closeBtn:hover,.closeBtn:focus{
     color:#000;
     text-decoration: none;
     cursor:pointer;
+}
+
+.modal-form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background: DarkSlateGray;
+    padding: 10px;
+    color:Ivory;
+    text-align: center;
 }
 
 @keyframes modalopen{

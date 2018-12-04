@@ -17,14 +17,19 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<span class="closeBtn">&times;</span>
-				<h2>Modal Header</h2>
+				<h2>¡Felicidades! Has ganado</h2>
 			</div>
 			<div class="modal-body">
-				<p>Hello... I am a modal</p>
-				<p>A continuación, ingrese los datos solicitados.</p>
+				<form class="modal-form">
+					<label><b>Nickname:</b></label>
+					<input id="user" name="nickname" type="text" placeholder="winner" required />
+				</form>
+				<div class="modal-form">
+					<p><b>Time<br>5:09</b></p>
+				</div>
 			</div>
 			<div class="modal-footer">
-				<h3>Modal Footer</h3>
+				<button id="footBtn" class="button"><b>Save</b></button>
 			</div>
 
 		</div>

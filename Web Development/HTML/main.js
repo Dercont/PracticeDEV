@@ -22,9 +22,9 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-//Funciton to close modal if outside click
+/*//Funciton to close modal if outside click
 function clickOutside(e) {
     if (e.target == modal) {
         modal.style.display = 'none';
     }
-}
+}*/

@@ -1,82 +1,266 @@
-body{
+html, body {
+    height: 100%;
+  }
+ 
+  body {
+    background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.6;
+  }
+ 
+  .ocean {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #015871;
+  }
+ 
+  .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+ 
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+ 
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+ 
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0, -25px, 0);
+    }
+    50% {
+      transform: translate3d(0, 5px, 0);
+    }
+  }
+ 
+  .center {
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 150;
+    position: relative;
+    height: 50%;
+    color: #555;
+    color: Ivory;
+    text-align: center;
+    color: Ivory;
+    background-color: DarkSlateGray;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    opacity: 0.75;
+    filter: alpha(opacity=50);
+  }
+ 
+  .generalesLeft {
+    background-size: cover;
+    background-position: left;
+    font-family: Lato;
+    font-weight: 300;
+    height: 100%;
+    color: #555;
+    color: Ivory;
+    text-align: left;
+    color: Ivory;
+    background-color: DarkSlateGray;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    opacity: 0.75;
+    filter: alpha(opacity=50);
+    
+  }
+  
+.tablefacts {
+    background-size: cover;
+    background-position: left;
+    font-family: Lato;
+    font-weight: bold;
+    height: 100%;
+    color: #555;
+    color: Ivory;
+    text-align: left;
+    color: Ivory;
+    background-color: DarkSlateGray;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    opacity: 0.75;
+    filter: alpha(opacity=50);
+
+}
+table, th, td {
+    border: 10px solid rgb(101, 158, 75);
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+th, td {
+    padding: 10px;
+}
+
+/*Breadcrumb*/
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-size: cover;
+   background-position: center;
+   font-family: Lato;
+   font-weight: 300;
+   font-size: 150%;
+   height: 100%;
+   color: #555;
+   color: Ivory;
+   text-align: center;
+   color: Ivory;
+   background-color: DarkSlateGray;
+   padding-top: 3px;
+   padding-right: 3px;
+   padding-bottom: 3px;
+   padding-left: 3px;
+   opacity: 0.75;
+   filter: alpha(opacity=50);
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 25px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 20px;
+  color: white;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 .button{
-    background:rgb(65, 104, 87);
-    padding:1em 2em;
-    color:#fff;
-    border:0;
+  background:rgb(65, 104, 87);
+  padding:1em 2em;
+  color:#fff;
+  border:0;
 }
 
 .button:hover{
-    background: #333;
+  background: #333;
 }
 
 .modal{
-   display:none;
-    position: fixed;
-    z-index:1;
-    left: 0;
-    top:0;
-    height: 100%;
-    width: 100%;
-    overflow:auto;
-    background-color: rgba(0,0,0,0.5);
+ display:block;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  overflow:auto;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .modal-content{
-    background-color:#f4f4f4;
-    margin:20% auto;
-    width: 400px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
-    animation-name: modalopen;
-    animation-duration:1.5s;
+  background-color:#f4f4f4;
+  margin:10% auto;
+  width: 400px;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration:1.5s;
 }
 .moodal-header h2, .modal-footer h3{
-    margin:0;
+  margin:0;
 }
 .modal-header{
-    background:DarkSlateGray;
-    padding: 15px;
-    color:Ivory;
+  background:DarkSlateGray;
+  padding: 15px;
+  color:Ivory;
 }
 .modal-body{
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .modal-footer{
-    background: DarkSlateGray;
-    padding: 10px;
-    color:Ivory;
-    text-align: center;
+  background: DarkSlateGray;
+  padding: 10px;
+  color:Ivory;
+  text-align: center;
 }
 
 .closeBtn{
-    color: #ccc;
-    float: right;
-    font-size:30px;
-    color:Ivory;
+  color: #ccc;
+  float: right;
+  font-size:30px;
+  color:Ivory;
 }
 
 .closeBtn:hover,.closeBtn:focus{
-    color:#000;
-    text-decoration: none;
-    cursor:pointer;
+  color:#000;
+  text-decoration: none;
+  cursor:pointer;
 }
 
 .modal-form{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    background: DarkSlateGray;
-    padding: 10px;
-    color:Ivory;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  background: DarkSlateGray;
+  padding: 10px;
+  color:Ivory;
+  text-align: center;
+}
+input{
+  font-family: Arial, Helvetica, sans-serif;
+  background: darkslategray;
+  font-style:italic;
+  font-size: 15px;
+  padding: 10px;
+  color:Ivory;
+  text-align: left;
 }
 
 @keyframes modalopen{
-    from{opacity: 0}
-    to {opacity: 1}
+  from{opacity: 0}
+  to {opacity: 1}
 }
+

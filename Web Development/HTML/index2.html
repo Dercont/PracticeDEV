@@ -7,34 +7,53 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Pruba de Modal</title>
 	<link rel="stylesheet" href="styles2.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+	<div>
+		<!-- Encabezado-->
+		<h1 class="center"><b>TOP 10</b></h1>
+	</div>
 
-	<button id="modalBtn" class="button">Click here</button>
+	<div>
+		<!--Menú de Navegación-->
+		<ul class="breadcrumb">
+			<li><a href="/presentacion">Home</a></li>
+			<li><a href="/juego">Game</a></li>
+			<li><a href="/top10">Top 10</a></li>
+		</ul>
+		<div>
+			<!--<button id="modalBtn" class="button">Click here</button>-->
 
-	<div id="simpleModal" class="modal">
-		<div class="modal-content">
-			<div class="modal-header">
-				<span class="closeBtn">&times;</span>
-				<h2>¡Felicidades! Has ganado</h2>
-			</div>
-			<div class="modal-body">
-				<form class="modal-form">
-					<label><b>Nickname:</b></label>
-					<input id="user" name="nickname" type="text" placeholder="winner" required />
-				</form>
-				<div class="modal-form">
-					<p><b>Time<br>5:09</b></p>
+			<div id="simpleModal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--<span class="closeBtn">&times;</span>-->
+						<h2>¡Felicidades! Has ganado</h2>
+					</div>
+					<div class="modal-body">
+						<form class="modal-form" method="POST" action="/top10">
+							<label><b>Nickname:</b></label>
+							<input id="user" name="nombre" type="text" placeholder="winner" required />
+							<br>
+							<br>
+							<label><b>Score:</b></label>
+							<input id="score" name="puntaje" type="text">
+							<br>
+							<br>
+							<input id="footBtn" class="button"type="submit" value="Enviar">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<br>
+						<!--<button id="footBtn" class="button"><b>Save</b></button>-->
+					</div>
+
 				</div>
-			</div>
-			<div class="modal-footer">
-				<button id="footBtn" class="button"><b>Save</b></button>
-			</div>
 
-		</div>
-
-		<script src="main.js"></script>
+				<script src="main.js"></script>
 </body>
 
 </html>

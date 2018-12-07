@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retro MineSweeper</title>
+
+    <link rel="stylesheet" href="juego.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+
+</head>
+
+<body oncontextmenu="return false;">
+
+    <div>
+        <!-- Encabezado con Generales -->
+        <h1 class="center"><b> Retro MineSweeper</b>
+        </h1>
+    </div>
+
+    <!--Menú de Navegación-->
+    <div>
+
+        <ul class="breadcrumb">
+            <li><a href="/presentacion">Home</a></li>
+            <li><a href="/juego">Game</a></li>
+            <li><a href="/top10">Top 10</a></li>
+        </ul>
+
+    </div>
+
+    <div align=center>
+        <div class="malla"></div>
+    </div>
+
+    <div align=center>
+        <a id="top10" class="interactiveButton" href="localhost/top10">Top 10 </a>
+        <button id="newgame" class="interactiveButton" onclick="app.reloadPage()" align="center">New Game</button>
+        <p id="contador" class="interactiveButton">Banderas: 40 / 40</p>
+    </div>
+
+    <div class="contador"></div>
+    <div class="footer">
+        <p></p>
+    </div>
+     
+        <div id="my-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" onclick="app.closeModal()">&times;</span>
+                    <br>
+                </div>
+                <div class="modal-body">
+                    <h2>You Lose, Try again!</h2>
+                </div>
+                <div class="modal-footer">
+                    <br>
+                </div>
+            </div>
+        </div>
+    
+</body>
+<script src="juego.js"></script>
+
+<script>
+    (function (main) {
+        app.main();
+    })
+        (window);
+</script>
+
+</html>

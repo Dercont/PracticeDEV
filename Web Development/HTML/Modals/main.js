@@ -14,7 +14,7 @@ window.addEventListener('click', clickOutside);
 
 //Function to open modal
 function openModal() {
-    modal.style.display = 'block';
+   modal.style.display = 
 }
 
 //Function to close modal
@@ -28,3 +28,4 @@ function clickOutside(e) {
         modal.style.display = 'none';
     }
 }*/
+

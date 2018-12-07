@@ -1,0 +1,414 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+  overflow: hidden;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color: DarkSlateGray;
+  color: white;
+  text-align: center;
+}
+
+.center {
+  background-size: cover;
+  background-position: center;
+  font-family: Lato;
+  font-weight: 150;
+  position: relative;
+  height: 50%;
+  color: #555;
+  color: Ivory;
+  text-align: center;
+  color: Ivory;
+  background-color: DarkSlateGray;
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  opacity: 0.75;
+  filter: alpha(opacity=50);
+}
+
+.malla {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 600px;
+  height: 600px;
+}
+
+.contador {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 600px;
+  height: 20px;
+}
+
+/*Breadcrumb*/
+
+/* Style the list */
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-size: cover;
+  background-position: center;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 150%;
+  height: 100%;
+  color: #555;
+  color: Ivory;
+  text-align: center;
+  color: Ivory;
+  background-color: DarkSlateGray;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  opacity: 0.75;
+  filter: alpha(opacity=50);
+}
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 25px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+  padding: 20px;
+  color: white;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.mina_abierta {
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  background: DarkSlateGrey;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9', GradientType=0);
+  background-color: #cccccc;
+  border: 2px solid #dcdcdc;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  color: #0a0a0a;
+  font-family: Impact;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #ffffff;
+}
+
+.bomba {
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  background: DarkSlateGrey;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9', GradientType=0);
+  background-color: #e66;
+  border: 2px solid #dcdcdc;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  color: #0a0a0a;
+  font-family: Impact;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #ffffff;
+  background-image: url("https://img00.deviantart.net/db17/i/2006/032/f/7/walking_bob_omb_by_zerowd.gif");
+  background-size: 32px;
+  width: 36px;
+  height: 36px;
+}
+
+.bandera {
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9', GradientType=0);
+  background-color: #cccccc;
+  border: 2px solid #dcdcdc;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  color: #0a0a0a;
+  font-family: Impact;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #ffffff;
+  background-image: url("https://image.flaticon.com/icons/png/512/33/33871.png");
+  /*background-image: url("https://static.planetminecraft.com/files/avatar/511334.png");*/
+  background-size: 36px;
+  width: 36px;
+  height: 36px;
+}
+
+.mina_cerrada {
+  /*
+   Aqui va el codigo de container
+   */
+  /*Estilo clásico*/
+  /*border: 2px outset #CCD6DD;
+  background-color: #CCD6DD;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  align-content: center;*/
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+  background: -moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background: -webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background: -o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background: -ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9', GradientType=0);
+  background-color: #f9f9f9;
+  border: 2px solid #dcdcdc;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  color: #0a0a0a;
+  font-family: Impact;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #ffffff;
+}
+
+.mina:hover {
+  /*Estilo clásico*/
+  /*background-color:  #55ACEE;
+  color:  #55ACEE;*/
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+  background: -moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background: -webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background: -o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background: -ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9', GradientType=0);
+  background-color: #e9e9e9;
+}
+
+.mina:active {
+  position: relative;
+  top: 1px;
+}
+
+.interactiveButton {
+  background-color: DarkSlateGray;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  border-radius: 17px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 15px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+.interactiveButton:hover {
+  background-color: #5cbf2a;
+}
+
+.interactiveButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/*Añadiendo apariencia del cronometro*/
+/*Cronómetro*/
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}
+
+.stopwatch {
+  width: 300px;
+  background-color: #0af;
+  border-radius: 5px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.75), 0 0 1px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.stopwatch, .stopwatch * {
+  transition: all 0.15s ease-out;
+}
+.stopwatch .controls {
+  display: flex;
+}
+.stopwatch .controls button {
+  flex-grow: 1;
+  margin: 0 5px 4px;
+  padding: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.75);
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.stopwatch .controls button:active {
+  margin-bottom: 0;
+  margin-top: 4px;
+  box-shadow: none;
+}
+.stopwatch .controls .start {
+  background-color: #5d5;
+}
+.stopwatch .controls .start:hover {
+  background-color: #6e6;
+}
+.stopwatch .controls .stop {
+  background-color: #d55;
+}
+.stopwatch .controls .stop:hover {
+  background-color: #e66;
+}
+.stopwatch .controls .reset {
+  background-color: #55d;
+}
+.stopwatch .controls .reset:hover {
+  background-color: #66e;
+}
+.stopwatch .display {
+  font-size: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+.stopwatch .display :not(:last-child):after {
+  content: ':';
+}
+
+/*Estilos del Modal*/
+:root {
+    --modal-duration: 1s;
+    --modal-color: #f4f4f4;
+}
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 400px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+     
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+    text-align: center;
+  }
+ 
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #015871;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+ 
+  .modal-body {
+    padding: 10px 20px;
+    background: DarkSlateGray;
+    text-align: center;
+    color: #f4f4f4;
+  }
+ 
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .close {
+    color: #015871;
+    float: right;
+    font-size: 30px;
+    color:#015871;
+  }
+    
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
